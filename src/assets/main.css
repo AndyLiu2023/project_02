@@ -1,0 +1,196 @@
+/* @import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+
+
+:root{
+  --color-1: #93c7ee;
+  --color-2: #e3f2fe;
+  --color-3: #b999de;
+  --color-4: #ff9999;
+  --color-5: #99ff99;
+  --color-6: #fffff5;
+  --color-7: #42a7f5;
+  --border-radius-1: 10px;
+}
+
+*{
+  font-family: "Noto Sans TC", sans-serif;
+  font-style: normal;
+  margin: 0;
+
+}
+
+body{
+  background-color: var(--color-1);
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  
+  
+
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.foodlist-ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+
+}
+
+.foodlist-ul-li{
+  width: 100%;
+  margin: 0.5rem 0;
+  
+}
+
+.foodlist-ul-ul{
+  background-color: var(--color-6) ;
+  border-radius: var(--border-radius-1);
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.foodlist-ul-ul li{
+  width: 100%;
+  margin: 0.25rem 0;
+  
+  
+}
+
+.foodlist-ul-ul-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.25rem 0;
+ 
+}
+
+.foodlist-ul-ul-ul li{
+  width: 25%;
+  background-color:var(--color-7);
+  color: var(--color-6);
+  padding: 0.25rem 0;
+  border-radius: 50px;
+  
+}
+
+/* .foodlist-ul-ul-ul-second{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0.25rem 0;
+
+} */
+
+/* .foodlist-ul-ul-ul-second li{
+  padding: 0 1rem;
+} */
+
+.foodlist-prefer-btn button{
+  margin: 0.25rem 0.5rem 0 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-1);
+  background-color: var(--color-1);
+}
+
+.foodlist-prefer-btn button:hover{
+  background-color: var(--color-3);
+  color: var(--color-2);
+}
+
+
+.love{
+  background-color: var(--color-5);
+
+}
+
+
+.hate{
+  background-color: var(--color-4);
+}
+
+@media  (min-width: 60rem){
+  .foodlist-ul-ul{
+
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .foodlist-ul-ul-ul{
+    justify-content: flex-start;
+    margin: 0.25rem 0;
+   
+  }
+
+  .foodlist-ul-ul-ul li{
+    margin: 0 0.25rem;
+    
+  }
+ 
+  .foodlist-ul-ul-ul-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+
+}
